@@ -1,0 +1,37 @@
+
+
+
+<div class="container">
+
+
+  <div class="ace-editor-container">
+
+    <div class="javascript">
+      <nav>
+        <ul>
+          <li class="{{htmlSelected}}" (click)="changeEditor('html')">index.html</li>
+          <li class="{{cssSelected}}" (click)="changeEditor('css')">styles.css</li>
+          <li class="{{jsSelected}}" (click)="changeEditor('javascript')">Main.js</li>
+          <!-- <li class="addFile"><span>+</span></li> -->
+        </ul>
+      </nav>
+      <ace-editor [(text)]="javascript"  *ngIf="editor=='javascript'"  [mode]="'javascript'" ></ace-editor>
+      <ace-editor [(text)]="html" *ngIf="editor=='html'" [durationBeforeCallback]="500" (textChanged)="update()" [mode]="'html'" ></ace-editor>
+      <ace-editor [(text)]="css" *ngIf="editor=='css'" [mode]="'css'" ></ace-editor>
+    </div>
+    <button (click)="update()">Updated </button>
+
+    <!-- <div class="html">
+
+    </div>
+    <div class="css">
+      <ace-editor [mode]="'css'" ></ace-editor>
+    </div> -->
+  </div>
+{{test}}
+
+<div class="one" [innerHtml]="innerHtml" >
+
+
+</div>
+</div>

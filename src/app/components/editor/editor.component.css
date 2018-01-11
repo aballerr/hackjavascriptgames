@@ -1,0 +1,81 @@
+
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.one {
+  width: 600px;
+  height: 600px;
+  background: green;
+  margin-left: 200px;
+}
+
+.javascript {
+  background: #191919;
+}
+
+ace-editor {
+  width: 500px;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+nav {
+
+
+  margin: 0;
+  padding: 0;
+  margin-left: -40px;
+
+}
+
+ul li {
+  float: left;
+  list-style: none;
+  margin-left: 0;
+  margin-right: 2px;
+  padding: 5px;
+  font-size: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-style: bold;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+
+
+
+.addFile {
+  background-color: #4c4c4c;
+  resize: none;
+
+}
+span {
+    font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+
+/*If a navbar item is not selected, it's colors are as follows*/
+.notSelected {
+  background-color: #4c4c4c;
+  color: white;
+
+}
+
+.notSelected:hover {
+  background-color: #7f7f7f;
+}
+
+
+/*If a tab is selected, it should show it  */
+.selected {
+  background: #323232;
+  color: white;
+}
