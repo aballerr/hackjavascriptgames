@@ -2,27 +2,43 @@
 
 
 <div class="container">
-<div class="editor-container">
-  <div class="nav-container">
-    <nav>
-      <ul>
-        <li class="{{htmlSelected}}" (click)="changeEditor('html')">index.html</li>
-        <li class="{{cssSelected}}" (click)="changeEditor('css')">styles.css</li>
-        <li class="{{jsSelected}}" (click)="changeEditor('javascript')">main.js</li>
-      </ul>
-    </nav>
-  </div>
-  <div class="ace-editor-container">
-    <ace-editor [(text)]="javascript"  *ngIf="editor=='javascript'" [durationBeforeCallback]="300" (textChanged)="updateJavaScript()"  [mode]="'javascript'" ></ace-editor>
-    <ace-editor [(text)]="html" *ngIf="editor=='html'" [durationBeforeCallback]="500" (textChanged)="updateHTML()" [mode]="'html'" ></ace-editor>
-    <ace-editor [(text)]="css" *ngIf="editor=='css'" [mode]="'css'" ></ace-editor>
-  </div>
-</div>
+
+  <!-- <div class="edge">
+
+</div> -->
 <div class="content-container" [innerHtml]="innerHtml | safeHtml">
 
 </div>
+<div class="right-container">
+  <div class="editor-container">
+    <div class="nav-container">
+      <nav>
+        <ul>
+          <li class="{{htmlSelected}}" (click)="changeEditor('html')">index.html</li>
+          <li class="{{cssSelected}}" (click)="changeEditor('css')">styles.css</li>
+          <li class="{{jsSelected}}" (click)="changeEditor('javascript')">main.js</li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="ace-editor-container">
+      <ace-editor [(text)]="javascript"  *ngIf="editor=='javascript'" [durationBeforeCallback]="300" (textChanged)="updateJavaScript()"  [mode]="'javascript'" ></ace-editor>
+      <ace-editor [(text)]="html" *ngIf="editor=='html'" [durationBeforeCallback]="500" (textChanged)="updateHTML()" [mode]="'html'" ></ace-editor>
+      <ace-editor [(text)]="css" *ngIf="editor=='css'" [mode]="'css'" ></ace-editor>
+    </div>
+  </div>
+  <div class="bottom-container">
+
+  </div>
+</div>
 
 </div>
-<button (click)="updateCSS()">Execute</button>
+<button (click)="updateHTML()">Execute</button>
 
 <label for="">MY OWN</label>
+
+<style media="screen">
+p {
+  color: white;
+}
+</style>

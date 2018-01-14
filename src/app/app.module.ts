@@ -5,7 +5,8 @@ import { SafeHtml } from './safeHtml';
 import { AceEditorComponent } from 'ng2-ace-editor';
 import { AppComponent } from './app.component';
 import { EditorComponent } from './components/editor/editor.component';
-
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -13,13 +14,24 @@ import { EditorComponent } from './components/editor/editor.component';
     AppComponent,
     EditorComponent,
     AceEditorComponent,
-    SafeHtml
+    SafeHtml,
+    NavbarComponent
 
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([
+      {
+        path: 'nav',
+        component: NavbarComponent,
 
+      },
+      {
+        path: 'editor',
+        component: EditorComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

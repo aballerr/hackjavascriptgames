@@ -1,0 +1,47 @@
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #1DA1F2;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+/*
+.topnav a:hover {
+  background-color: #d1ecfc;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #60bdf5
+;
+  color: white;
+}*/
+
+
+.myown {
+  margin-top: 12px;
+  border: 1px solid white;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 12px;
+}
+
+a > img {
+  width: 60px;
+  height: 40px;
+  margin-top: 5px;
+  cursor: pointer;
+  float: right;
+
+
+}

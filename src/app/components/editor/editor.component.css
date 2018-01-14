@@ -2,18 +2,22 @@
 .container {
   margin: 0;
   padding: 0;
+
   display: flex;
   flex-direction: row;
-  background: yellow;
+  background-color: white;
   width: 100%;
   height: 90vh;
+
 }
 
 /* Editor container set up */
 .editor-container {
-  width: 50%;
-  height: 100%;
-  background: blue;
+  width: 100%;
+  height: 50%;
+  background: white;
+
+
   overflow: hidden;
 
 }
@@ -31,11 +35,12 @@ ace-editor {
 
 /*navbar for the editor is here */
 .nav-container {
-  height: 5%;
+  height: 8%;
+
 
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 nav {
@@ -47,7 +52,20 @@ ul {
     margin: 0;
     padding: 0;
     height: 100%;
+      background: #262626;
 
+}
+
+.right-container {
+  width: 50%;
+  height: 100%;
+
+}
+
+.bottom-container {
+  width: 100%;
+  height: 50%;
+  background-color: black;
 }
 
  li {
@@ -56,18 +74,26 @@ ul {
   float: left;
   margin-left: 0;
   margin-right: 2px;
-  padding-top: 10px;
-  font-size: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 100%;
+
+  font-size: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+
   font-style: bold;
   -webkit-user-select: none;
   cursor: pointer;
   background: #323232;
-  overflow: none;
+  height: 100%;
   font-family: arial;
+ line-height: 35px
 
+}
+
+/*Creates an edge between the editor and the output code*/
+.edge {
+  height: 100%;
+  width: 3px;
+  background-color: gray;
 }
 
 .notSelected {
@@ -92,84 +118,7 @@ ul {
 .content-container {
   width: 50%;
   height: 100%;
-  background: pink;
-}
+  background: #f2f2f2;
 
-/*
-.container {
-  display: flex;
-  flex-direction: row;
-  background-color: pink;
-  height: 600px;
-}
-
-.right-side {
-  width: 50%;
-  height: 90%;
-  background: green;
 
 }
-
-.javascript {
-  background: white;
-  height: 100%;
-}
-
-ace-editor {
-  width: 100%;
-  height: 90%;
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-}
-
-nav {
-
-
-
-  padding: 0;
-  margin-left: -40px;
-  background-color: black;
-}
-
-
-.left-side {
-  width: 50%;
-  height: 100%;
-  background-color: blue;
-}
-
-
-ul {
-  height: 100%;
-  background-color: black;
-}
-
-ul li {
-  float: left;
-  list-style: none;
-  margin-left: 0;
-  margin-right: 2px;
-  padding: 5px;
-  font-size: 22px;
-  padding-left: 20px;
-  padding-right: 20px;
-  height: 100%;
-  font-style: bold;
-  -webkit-user-select: none;
-  cursor: pointer;
-}
-
-
-
-.addFile {
-  background-color: #4c4c4c;
-  resize: none;
-
-}
-span {
-    font-size: 24px;
-  font-weight: bold;
-  color: white;
-}
-*/
