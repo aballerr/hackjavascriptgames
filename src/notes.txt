@@ -1,0 +1,4 @@
+This is just some notes on things that I did in the project and should probably remember.
+
+1.  I set the noEmits option in tsconfig to "false" because  I was an error seen here: "https://github.com/Microsoft/TypeScript/wiki/FAQ#why-am-i-getting-the-error-ts5055-cannot-write-file-xxxjs-because-it-would-overwrite-input-file-when-using-javascript-files"
+2.  I believe if you build the above, it will exclude that javascript files.  So just remember that
